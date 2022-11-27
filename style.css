@@ -170,11 +170,23 @@ box-shadow: 0 0 40px 40px #3f37c9 inset, 0 0 0 0 #3f37c9 ;
 }
 
 .animation10{
-  border-color: #bb3e03;
+  color:white;
+  border: none;
+  background-color: #9e0059;
+  box-shadow:inset 0 0 0 0 #6a994e;
+  transition: ease-in-out 0.4s;
 }
+.animation10:hover{
+ box-shadow: inset 200px 0 0 0 #dc2f02;
+}
+
 .animation11{
   border-color: #bb3e03;
 }
+.animation11:hover{
+
+}
+
 .animation12{
   border-color: #bb3e03;
 }
@@ -195,11 +207,14 @@ box-shadow: 0 0 40px 40px #3f37c9 inset, 0 0 0 0 #3f37c9 ;
 }
 
 .animation15{
-  border-color: #bb3e03;
+  border-color: #d81b60;
+  color: #d81b60;
+  transition: 0.4s;
 }
 .animation15:hover{
     box-shadow: 2.5px 2.5px 0 2.5px white, -2.5px -2.5px 0 2.5px white, 0 0 0 2px white inset, 7px 7px 0 7px #d81b60, -7px -7px 0 7px #d81b60;
     transition: 0.4s;
+    color: #fff;
 }
 
 .animation16{
@@ -208,6 +223,28 @@ box-shadow: 0 0 40px 40px #3f37c9 inset, 0 0 0 0 #3f37c9 ;
  transition: 0.3s;
 }
 .animation16:hover{
+  box-shadow: 0px 0px 0px 2.5px #fff, 0px 0px 0px 4.5px #9e0059, 0px 0px 0px 10px #dc6262, 0px 0px 0px 8.5px #9e0059;
+  background: transparent;
+  color: #dc6262;
+  transition: 0.3s;
+}
+.animation17{
+  border: none;
+ background:#d41f40 ;
+ transition: 0.3s;
+}
+.animation17:hover{
+  box-shadow: 0px 0px 0px 2.5px #fff, 0px 0px 0px 4.5px #9e0059, 0px 0px 0px 10px #dc6262, 0px 0px 0px 8.5px #9e0059;
+  background: transparent;
+  color: #dc6262;
+  transition: 0.3s;
+}
+.animation18{
+  border: none;
+ background:#d41f40 ;
+ transition: 0.3s;
+}
+.animation18:hover{
   box-shadow: 0px 0px 0px 2.5px #fff, 0px 0px 0px 4.5px #9e0059, 0px 0px 0px 10px #dc6262, 0px 0px 0px 8.5px #9e0059;
   background: transparent;
   color: #dc6262;
