@@ -25,6 +25,7 @@ h1{
     box-sizing: border-box;
     background-color: transparent;
     cursor: pointer;
+    flex-direction:row;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     font-size: 1rem;
@@ -40,9 +41,81 @@ h1{
     appearance: none;
 
 }
-.animation{
+.animation1{
 box-shadow: 0 0 40px 40px #3f37c9 inset, 0 0 0 0 #3f37c9 ;
 }
-.animation:hover{
+.animation1:hover{
    box-shadow: 0 0 10px 0 #3f37c9 inset, 0 0 10px 4px #3f37c9; 
+}
+
+.animation2{
+  border-color: #a4133c;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+.animation2:hover{
+ box-shadow: 0 0 40px 40px #a4133c inset;
+}
+
+.animation3{
+  background: #3f37c9;
+  background: linear-gradient(to right top, rgba(96,9,240,1) 0%, rgb(244, 13, 209) 100%);
+  border: none;
+}
+.animation3:hover{
+   box-shadow:  4px 4px 6px 0 rgba(15, 18, 67, 0.5),
+              -4px -4px 6px 0 rgba(9, 28, 53, 0.5), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.2),
+    inset 4px 4px 6px 0 rgba(46, 39, 39, 0.4);
+}
+
+.animation4{
+  border: none !important;
+  background-color:#4ea8de;
+}
+.animation4:hover{
+  background: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+   animation:slidebg 5s linear infinite;
+}
+
+@keyframes slidebg {
+  to {
+    background-position:20vw;
+  }
+}
+
+.animation5{
+  border-color: #bb3e03;
+}
+.animation6{
+  border-color: #bb3e03;
+}
+.animation7{
+  border-color: #bb3e03;
+}
+.animation8{
+  border-color: #bb3e03;
+}
+.animation9{
+  border-color: #bb3e03;
+}
+.animation10{
+  border-color: #bb3e03;
+}
+.animation11{
+  border-color: #bb3e03;
+}
+.animation12{
+  border-color: #bb3e03;
+}
+.animation13{
+  border-color: #bb3e03;
+}
+.animation14{
+  border-color: #bb3e03;
+}
+.animation15{
+  border-color: #bb3e03;
+}
+.animation16{
+  border-color: #bb3e03;
 }
