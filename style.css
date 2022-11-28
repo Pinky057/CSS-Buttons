@@ -1,118 +1,127 @@
-html, body{
-    margin:0;
-    padding:0;
-    font-family: 'Courier New', Courier, monospace;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    background-color: #001219;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: #001219;
 }
 
-h1{
-    font-size:3.5rem;
-    color: #cd9777;
-    text-transform: uppercase;
-    text-align: center;
-    width: 100%;
-
+h1 {
+  font-size: 3.5rem;
+  color: #cd9777;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
 }
-@media(max-width: 600px) {
+@media (max-width: 600px) {
   h1 {
     font-size: 2rem;
   }
 }
-.btn{
-    box-sizing: border-box;
-    background-color: transparent;
-    cursor: pointer;
-    flex-direction:row;
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1rem;
-    border: 2px solid #3f37c9;
-    border-radius:10px;
-    text-transform: uppercase;
-    text-decoration: none;
-    line-height: 1;
-    font-weight:600;
-    padding: 19px 40px;
-    margin: 20px;
-    color: aliceblue;
-    appearance: none;
+.btn {
+  box-sizing: border-box;
+  background-color: transparent;
+  cursor: pointer;
+  flex-direction: row;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1rem;
+  border: 2px solid #3f37c9;
+  border-radius: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 1;
+  font-weight: 600;
+  padding: 19px 40px;
+  margin: 20px;
+  color: aliceblue;
+  appearance: none;
+}
+.animation1 {
+  box-shadow: 0 0 40px 40px #3f37c9 inset, 0 0 0 0 #3f37c9;
+}
+.animation1:hover {
+  box-shadow: 0 0 10px 0 #3f37c9 inset, 0 0 10px 4px #3f37c9;
+}
 
-}
-.animation1{
-box-shadow: 0 0 40px 40px #3f37c9 inset, 0 0 0 0 #3f37c9 ;
-}
-.animation1:hover{
-   box-shadow: 0 0 10px 0 #3f37c9 inset, 0 0 10px 4px #3f37c9; 
-}
-
-.animation2{
+.animation2 {
   border-color: #a4133c;
   transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
 }
-.animation2:hover{
- box-shadow: 0 0 40px 40px #a4133c inset;
+.animation2:hover {
+  box-shadow: 0 0 40px 40px #a4133c inset;
 }
 
-.animation3{
+.animation3 {
   background: #3f37c9;
-  background: linear-gradient(to right top, rgba(96,9,240,1) 0%, rgb(244, 13, 209) 100%);
+  background: linear-gradient(
+    to right top,
+    rgba(96, 9, 240, 1) 0%,
+    rgb(244, 13, 209) 100%
+  );
   border: none;
 }
-.animation3:hover{
-   box-shadow:  4px 4px 6px 0 rgba(15, 18, 67, 0.5),
-              -4px -4px 6px 0 rgba(9, 28, 53, 0.5), 
-    inset -4px -4px 6px 0 rgba(255,255,255,.2),
+.animation3:hover {
+  box-shadow: 4px 4px 6px 0 rgba(15, 18, 67, 0.5),
+    -4px -4px 6px 0 rgba(9, 28, 53, 0.5),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
     inset 4px 4px 6px 0 rgba(46, 39, 39, 0.4);
 }
 
-.animation4{
+.animation4 {
   border: none;
-  background-color:#4ea8de;
+  background-color: #4ea8de;
 }
-.animation4:hover{
-  background: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
-   animation:slidebg 2s linear infinite;
+.animation4:hover {
+  background: linear-gradient(
+    90deg,
+    #00c0ff 0%,
+    #ffcf00 49%,
+    #fc4f4f 80%,
+    #00c0ff 100%
+  );
+  animation: slidebg 2s linear infinite;
 }
 
 @keyframes slidebg {
   to {
-    background-position:20vw;
+    background-position: 20vw;
   }
 }
 
-.animation5{
+.animation5 {
   border: 3px solid #9bb1ff;
   background: linear-gradient(30deg, #2196f3 50%, transparent 50%);
   background-size: 500px;
   background-repeat: no-repeat;
-  background-position:0%;
-  transition:background 400ms ease-in-out;
+  background-position: 0%;
+  transition: background 400ms ease-in-out;
 }
-.animation5:hover{
+.animation5:hover {
   background-position: 100%;
   color: #9bb1ff;
 }
-.animation6{
+.animation6 {
   border: 3px solid #93eece;
   background: linear-gradient(90deg, #40916c 50%, transparent 50%);
   background-size: 500px;
   background-repeat: no-repeat;
-  background-position:0%;
-  transition:background 400ms ease-in-out;
+  background-position: 0%;
+  transition: background 400ms ease-in-out;
 }
-.animation6:hover{
+.animation6:hover {
   background-position: 100%;
   color: #93eece;
 }
-.animation7{
+.animation7 {
   border: 3px solid #ff0251;
   transition: 0.3s;
-  color:#ff0251;
+  color: #ff0251;
 }
-.animation7:hover{
+.animation7:hover {
   animation: pulse 1s infinite;
   transition: 0.3s;
   color: #fff;
@@ -122,17 +131,17 @@ box-shadow: 0 0 40px 40px #3f37c9 inset, 0 0 0 0 #3f37c9 ;
     transform: scale(1);
   }
   70% {
-    transform: scale(.9);
+    transform: scale(0.9);
   }
-    100% {
+  100% {
     transform: scale(1);
   }
 }
-.animation8{
+.animation8 {
   border-color: #e4c1f9;
-  color:#e4c1f9
+  color: #e4c1f9;
 }
-.animation8:hover{
+.animation8:hover {
   animation: rotate 0.9s ease-in-out both;
   animation-delay: 0.06s;
   letter-spacing: 1px;
@@ -155,116 +164,146 @@ box-shadow: 0 0 40px 40px #3f37c9 inset, 0 0 0 0 #3f37c9 ;
   }
 }
 
-.animation9{
+.animation9 {
   background: white;
   color: black;
   border: none;
   transition: all 0.4s;
- 
 }
-.animation9:hover{
+.animation9:hover {
   color: #ff0251;
   box-shadow: 0 0 0 10px rgba(250, 250, 250, 0.2);
-   animation: rotate 0.9s ease-in-out both;
+  animation: rotate 0.9s ease-in-out both;
   animation-delay: 0.06s;
 }
 
-.animation10{
-  color:white;
+.animation10 {
+  color: white;
   border: none;
   background-color: #9e0059;
-  box-shadow:inset 0 0 0 0 #6a994e;
-  transition: ease-in-out 0.4s;
+  box-shadow: inset 0 0 0 0 #6a994e;
+  transition: ease-in 0.4s;
 }
-.animation10:hover{
- box-shadow: inset 200px 0 0 0 #dc2f02;
-}
-
-.animation11{
-  border-color: #bb3e03;
-}
-.animation11:hover{
-
+.animation10:hover {
+  transition: ease-in 0.4s;
+  box-shadow: inset 200px 0 0 0 #dc2f02;
 }
 
-.animation12{
-  border-color: #bb3e03;
+.animation11 {
+  border: 0 solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+  outline: 1px solid;
+  outline-color: rgba(255, 255, 255, 0.5);
+  outline-offset: 0px;
+  text-shadow: none;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
 }
-.animation13{
-  border-color: #bb3e03;
+.animation11:hover {
+  border: 1px solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5),
+    0 0 20px rgba(255, 255, 255, 0.2);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 2px 2px #5c9eba;
 }
-.animation14{
+
+.animation12 {
+  border: none;
+  background-color: hwb(60 93% 4%);
+  color:black;
+}
+.animation12:hover {
+  box-shadow: 0px 0px 0px 2.5px #001219, 0px 0px 0px 5.5px #0e9ed2,
+    0px 0px 0px 10px #001219, 0px 0px 0px 10.5px #3913c3;
+  background: transparent;
+  color: #fff;
+}
+.animation13 {
+  border:2px solid #5c9eba;
+}
+.animation13:hover {
+  color:#fff;
+  box-shadow: 0 0 5px #00b4d8,
+              0 0 25px #00b4d8,
+              0 0 100px #00b4d8;
+}
+
+.animation14 {
   border-radius: 0;
-  color:#52b69a;
-  border:none;
-  border-bottom:solid 2px #52b69a;
+  color: #52b69a;
+  border: none;
+  border-bottom: solid 2px #52b69a;
   transition: 0.3s;
 }
-.animation14:hover{
-  background:#2b9348;
+.animation14:hover {
+  background: #2b9348;
   color: #fff;
   transition: 0.3s;
 }
 
-.animation15{
+.animation15 {
   border-color: #d81b60;
   color: #d81b60;
   transition: 0.4s;
 }
-.animation15:hover{
-    box-shadow: 2.5px 2.5px 0 2.5px white, -2.5px -2.5px 0 2.5px white, 0 0 0 2px white inset, 7px 7px 0 7px #d81b60, -7px -7px 0 7px #d81b60;
-    transition: 0.4s;
-    color: #fff;
+.animation15:hover {
+  box-shadow: 2.5px 2.5px 0 2.5px white, -2.5px -2.5px 0 2.5px white,
+    0 0 0 2px white inset, 7px 7px 0 7px #d81b60, -7px -7px 0 7px #d81b60;
+  transition: 0.4s;
+  color: #fff;
 }
 
-.animation16{
+.animation16 {
   border: none;
- background:#d41f40 ;
- transition: 0.3s;
+  background: #d41f40;
+  transition: 0.3s;
 }
-.animation16:hover{
-  box-shadow: 0px 0px 0px 2.5px #fff, 0px 0px 0px 4.5px #9e0059, 0px 0px 0px 10px #dc6262, 0px 0px 0px 8.5px #9e0059;
+.animation16:hover {
+  box-shadow: 0px 0px 0px 2.5px #fff, 0px 0px 0px 4.5px #9e0059,
+    0px 0px 0px 10px #dc6262, 0px 0px 0px 8.5px #9e0059;
   background: transparent;
   color: #dc6262;
   transition: 0.3s;
 }
-.animation17{
+.animation17 {
   border: none;
- background:#d41f40 ;
- transition: 0.3s;
+  background: #d41f40;
+  transition: 0.3s;
 }
-.animation17:hover{
-  box-shadow: 0px 0px 0px 2.5px #fff, 0px 0px 0px 4.5px #9e0059, 0px 0px 0px 10px #dc6262, 0px 0px 0px 8.5px #9e0059;
+.animation17:hover {
+  box-shadow: 0px 0px 0px 2.5px #fff, 0px 0px 0px 4.5px #9e0059,
+    0px 0px 0px 10px #dc6262, 0px 0px 0px 8.5px #9e0059;
   background: transparent;
   color: #dc6262;
   transition: 0.3s;
 }
-.animation18{
-  border: none;
- background:#d41f40 ;
- transition: 0.3s;
+.animation18 {
+  color: #03e9f4;
+  border: 1.5px solid #03e9f4;
+  border-radius: 7px;  
 }
-.animation18:hover{
-  box-shadow: 0px 0px 0px 2.5px #fff, 0px 0px 0px 4.5px #9e0059, 0px 0px 0px 10px #dc6262, 0px 0px 0px 8.5px #9e0059;
-  background: transparent;
-  color: #dc6262;
-  transition: 0.3s;
+.animation18:hover {
+  background-color: #03e9f4;
+  color: #050801;
+  box-shadow: 0px 0px 5px #03e9f4, 0px 0px 25px #03e9f4, 0px 0px 50px #03e9f4, 0px 0px 100px #03e9f4;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005); 
 }
 
 /* footer */
-
-.footerText a{
+.footerText{
+ padding:20%;
+}
+.footerText a {
   text-decoration: none;
   text-transform: uppercase;
-  padding:40px;
+  padding: 40px;
   text-align: center;
   color: #fff;
   cursor: pointer;
   font-weight: bold;
-
 }
 
-.footerText a:hover{
-  color:#00C0FF;
- text-decoration: underline;
+.footerText a:hover {
+  color: #00c0ff;
+  text-decoration: underline;
 }
