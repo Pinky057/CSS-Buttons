@@ -83,7 +83,7 @@ h1 {
     #fc4f4f 80%,
     #00c0ff 100%
   );
-  animation: slidebg 2s linear infinite;
+  animation: slidebg 4s linear infinite;
 }
 
 @keyframes slidebg {
@@ -224,7 +224,7 @@ h1 {
 .animation13:hover {
  background:linear-gradient(90deg,
   #2a1770, #2a3032, #143ee3);
-    animation: slidebg 2s linear infinite;
+    animation: slidebg 4s linear infinite;
 }
 
 @keyframes slidebg {
